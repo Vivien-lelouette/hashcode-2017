@@ -1,8 +1,10 @@
 package com.ssg.hashcode.algo;
 
-import com.ssg.hashcode.model.Output;
+import java.util.HashSet;
+
+import com.ssg.hashcode.model.*;
 
 public abstract class Algo {
 
-	public abstract Output execute();
+	public abstract Output execute(Model model);
 }

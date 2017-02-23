@@ -12,6 +12,30 @@ import java.util.Set;
 
 public class Model {
 	private Map<Integer, CacheServer> cacheServer = new HashMap<>();
+	public Map<Integer, CacheServer> getCacheServer() {
+		return cacheServer;
+	}
+
+	public void setCacheServer(Map<Integer, CacheServer> cacheServer) {
+		this.cacheServer = cacheServer;
+	}
+
+	public Map<Integer, Video> getVideos() {
+		return videos;
+	}
+
+	public void setVideos(Map<Integer, Video> videos) {
+		this.videos = videos;
+	}
+
+	public Map<Integer, EndPoint> getEndpoints() {
+		return endpoints;
+	}
+
+	public void setEndpoints(Map<Integer, EndPoint> endpoints) {
+		this.endpoints = endpoints;
+	}
+
 	private Map<Integer, Video> videos = new HashMap<>();
 	private Map<Integer, EndPoint> endpoints = new HashMap<>();
 	private List<VideoRequest> videoRequests = new ArrayList<>();
