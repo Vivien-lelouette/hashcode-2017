@@ -11,6 +11,17 @@ public class CacheServerConnection {
 	public void setLatency(int latency) {
 		this.latency = latency;
 	}
+	
+	public CacheServerConnection(EndPoint endpoint, CacheServer cache, int latency) {
+		this.endpoint = endpoint;
+		this.cache = cache;
+		this.latency = latency;
+	}
+	
+	public CacheServerConnection() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public EndPoint getEndpoint() {
 		return endpoint;
 	}

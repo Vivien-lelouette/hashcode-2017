@@ -8,6 +8,16 @@ public class Video {
 		return size;
 	}
 
+	public Video(int id, int size) {
+		super();
+		this.id = id;
+		this.size = size;
+	}
+
+	public Video() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void setSize(int size) {
 		this.size = size;
 	}

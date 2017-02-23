@@ -11,6 +11,15 @@ public class EndPoint {
 	public int getId() {
 		return id;
 	}
+	public EndPoint(int id, int latencyWithDataCenter, Set<CacheServerConnection> cacheServerConnections) {
+		this.id = id;
+		this.latencyWithDataCenter = latencyWithDataCenter;
+		this.cacheServerConnections = cacheServerConnections;
+	}
+	
+	public EndPoint() {
+	}
+	
 	public void setId(int id) {
 		this.id = id;
 	}
