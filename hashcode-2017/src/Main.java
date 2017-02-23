@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import com.ssg.hashcode.model.Model;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -14,6 +16,14 @@ public class Main {
 		try {
 			// read this file into InputStream
 			inputStream = new FileInputStream(args[0]);
+			
+			File f = new File(args[0]);
+			
+			Model m = new Model();
+				
+			m.buildFromFile(f);
+			
+			System.out.println(m);
 
 			// write the inputStream to a FileOutputStream
 			outputStream = new FileOutputStream(new File(args[1]));
@@ -27,7 +37,7 @@ public class Main {
 
 			System.out.println("Done!");
 
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			if (inputStream != null) {

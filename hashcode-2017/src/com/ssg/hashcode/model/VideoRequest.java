@@ -32,4 +32,9 @@ public class VideoRequest {
 	public void setNbRequests(int nbRequests) {
 		this.nbRequests = nbRequests;
 	}
+
+	@Override
+	public String toString() {
+		return "VideoRequest [video=" + video.getId() + ", endpoint=" + endpoint.getId() + ", nbRequests=" + nbRequests + "]";
+	}
 }

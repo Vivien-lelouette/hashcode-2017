@@ -30,7 +30,11 @@ public class Video {
 		this.id = id;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Video [id=" + id + ", size=" + size + "]";
+	}
+
 	
 	
 }

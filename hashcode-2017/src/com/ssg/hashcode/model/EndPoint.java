@@ -35,5 +35,10 @@ public class EndPoint {
 	}
 	public void setCacheServerConnections(Set<CacheServerConnection> cacheServerConnections) {
 		this.cacheServerConnections = cacheServerConnections;
+	}
+	@Override
+	public String toString() {
+		return "EndPoint [id=" + id + ", latencyWithDataCenter=" + latencyWithDataCenter + ", cacheServerConnections="
+				+ cacheServerConnections + "]";
 	}	
 }

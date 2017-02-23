@@ -34,4 +34,8 @@ public class CacheServerConnection {
 	public void setCache(CacheServer cache) {
 		this.cache = cache;
 	}
+	@Override
+	public String toString() {
+		return "CacheServerConnection [cache=" + cache.getId() + ", latency=" + latency + "]";
+	}
 }
