@@ -33,6 +33,14 @@ public class EndPoint {
 	public Set<CacheServerConnection> getCacheServerConnections() {
 		return cacheServerConnections;
 	}
+	public CacheServerConnection getCacheServerConnection(CacheServer cache) {
+		for(CacheServerConnection cacheServerConnection : cacheServerConnections) {
+			if(cacheServerConnection.getCache().getId() == cache.getId()) {
+				return cacheServerConnection;
+			}
+		}
+		return null;
+	}
 	public void setCacheServerConnections(Set<CacheServerConnection> cacheServerConnections) {
 		this.cacheServerConnections = cacheServerConnections;
 	}
